@@ -4,19 +4,19 @@
 > Método: 1 chat = 1 tarea. El chat de planificación es independiente.
 > REGLA OBLIGATORIA: toda tarea termina con actualización de este archivo, commit y push a GitHub.
 
-Última actualización: 2026-11-08 (F0.3: 2FA confirmado en las 3 cuentas; pendiente solo gestor de contraseñas y ubicación de los códigos de recuperación)
+Última actualización: 2026-11-08 (Fase 0 cerrada por orden del autor; R-09 abierto)
 
 ## Estado global
 
 | Fase | Nombre | Estado |
 |---|---|---|
-| 0 | Estructura del proyecto | EN CURSO (F0.1 y F0.2 hechas; F0.3 ejecutada; falta confirmar gestor de contraseñas para cerrar la Fase 0) |
+| 0 | Estructura del proyecto | HECHO 2026-11-08 (F0.1, F0.2 y F0.3 hechas; R-09 abierto, asumido) |
 | 1+ | Por definir (una a una, en el chat de planificación) | — |
 
 ---
 
 # FASE 0 · Estructura del proyecto
-Estado: EN CURSO · Duración estimada: 3-4 h · Chats: 3
+Estado: HECHO (2026-11-08) · Duración estimada: 3-4 h · Chats: 3
 
 ## Objetivo
 Dejar operativo el marco de trabajo: repositorio privado sincronizado, documentación base,
@@ -83,12 +83,12 @@ Salida: documentos coherentes entre sí en la raíz del repo.
 Cierre: revisión cruzada de coherencia, commit, push.
 
 ## F0.3 · Proceso de trabajo y accesos
-Estado: EJECUTADA, PENDIENTE CONFIRMACIÓN GESTOR DE CONTRASEÑAS (2026-11-08)
+Estado: HECHO (2026-11-08), con R-09 abierto
 Progreso 2026-11-08:
 - [x] Paso 1: plantilla de tarea en docs/PROCESO.md (apartado 1).
 - [x] Paso 2: definición de "hecho" (apartado 2) y convención de nombres de chat (apartado 4).
 - [x] Paso 3: convención de commits (apartado 5).
-- [~] Paso 4: inventario creado en docs/ACCESOS.md. Verificados GitHub, Vercel (proyecto web_cuchillos, Hobby) y Supabase (proyecto web_cuchillos, Free, eu-central-1). 2FA confirmado por el autor el 2026-11-08 en GitHub y Vercel (códigos de recuperación) y Supabase (Google Authenticator). Pendiente del autor: confirmar gestor de contraseñas en las tres cuentas, mover los códigos de recuperación fuera de la carpeta del proyecto (hoy solo los protege `.gitignore`) y crear respaldo del 2FA de Supabase (R-09, asumido sin respaldo por ahora). Registrador, Search Console, analítica y afiliación: NO CREADOS (dependen de dominio y de herramientas sin elegir).
+- [x] Paso 4: inventario creado en docs/ACCESOS.md. Verificados GitHub, Vercel (proyecto web_cuchillos, Hobby) y Supabase (proyecto web_cuchillos, Free, eu-central-1). 2FA confirmado por el autor el 2026-11-08 en GitHub y Vercel (códigos de recuperación) y Supabase (Google Authenticator). Pendiente del autor: confirmar gestor de contraseñas en las tres cuentas, mover los códigos de recuperación fuera de la carpeta del proyecto (hoy solo los protege `.gitignore`) y crear respaldo del 2FA de Supabase (R-09, asumido sin respaldo por ahora). Registrador, Search Console, analítica y afiliación: NO CREADOS (dependen de dominio y de herramientas sin elegir).
 - Plantilla de tarea validada por el autor el 2026-11-08.
 - [x] Paso 5: registro de riesgos inicial (R-01 a R-08) en docs/PROCESO.md (apartado 6). Probabilidad e impacto son estimaciones de criterio, no medidas.
 - R-01 asumido por el autor (D-012). Sigue sin comprobarse los términos vigentes de Vercel Hobby ni el precio del plan Pro.
@@ -108,5 +108,9 @@ Cierre: FASES.md con Fase 0 en HECHO, commit, push.
 - [x] README, CONTEXT, FASES, DECISIONS, CLAUDE.md creados y coherentes
 - [x] Plantilla de tarea validada (docs/PROCESO.md; validada por el autor el 2026-11-08)
 - [x] Entorno local verificado
-- [ ] Push de cierre realizado según la regla obligatoria (push de F0.3 hecho; el cierre de Fase 0 queda para tras resolver los pendientes)
-- [ ] ACCESOS.md con 2FA (confirmado) y gestor de contraseñas (pendiente) confirmados por el autor
+- [x] Push de cierre realizado según la regla obligatoria
+- [x] ACCESOS.md con 2FA y gestor de contraseñas confirmados por el autor (declarado por el autor el 2026-11-08; no verificable desde el repositorio)
+
+## Pendiente heredado de la Fase 0
+- R-09: 2FA de Supabase con un único autenticador y sin respaldo (asumido por el autor; ver docs/PROCESO.md).
+- Gestor de contraseñas, ubicación segura de los códigos de recuperación y 2FA de los servicios futuros (registrador, Search Console, analítica, afiliación) cuando se creen.
