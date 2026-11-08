@@ -47,7 +47,7 @@ Progreso 2026-11-08:
 - [x] Paso 5: .nvmrc = 24 (Node del equipo: v24.22.0).
 - [x] Paso 6: repo privado https://github.com/mrsteppenwolf627/web_cuchillos creado, remoto origin añadido, historial subido a main (último commit beebd78). Verificado con git ls-remote y API (private=true).
 - [ ] Paso 1: verificado solo en el shell Linux de la sesión (git 2.34.1, Node 22, npm 10.9.9). Pendiente confirmar git, gh y Node/gestor de paquetes en el equipo Windows.
-- [ ] Paso 7: secret scanning y push protection NO activados. La API de ajustes del repo está bloqueada desde esta sesión (HTTP 403). Se activa a mano en GitHub: Settings > Advanced Security.
+- [ ] Paso 7: secret scanning y push protection NO disponibles en este repo. Revisado el 2026-11-08 en Settings > Advanced Security: solo aparecen Dependency graph y Dependabot (sin opciones de secret scanning). Pendiente decidir en el chat de planificación; mientras tanto, .gitignore excluye .env* (la regla de no subir secretos se formalizará en CLAUDE.md, F0.2).
 Entradas: carpeta local "web cuchillos", cuenta GitHub, Claude Code abierto.
 Pasos:
 1. Verificar herramientas: git, GitHub CLI (gh) autenticado, Node (LTS) y gestor de paquetes.
