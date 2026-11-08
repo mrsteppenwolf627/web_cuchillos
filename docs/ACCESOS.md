@@ -12,7 +12,7 @@ Estados: VERIFICADO (comprobado y fecha), POR CONFIRMAR (lo debe confirmar el au
 |---|---|---|---|---|---|
 | GitHub | Repositorio, secret scanning, push protection | Usuario `mrsteppenwolf627` | VERIFICADO 2026-11-08 (gh autenticado por https; secret scanning y push protection activos) | CONFIRMADO por el autor 2026-11-08; códigos de recuperación guardados | POR CONFIRMAR |
 | Vercel | Hosting (plan Hobby) | Equipo "Aitor's projects" | VERIFICADO 2026-11-08: proyecto `web_cuchillos` creado y conectado a `main` del repositorio; despliegue de producción correcto (sin aplicación aún). Identidad verificada por el autor | CONFIRMADO por el autor 2026-11-08; códigos de recuperación guardados | POR CONFIRMAR |
-| Supabase | Base de datos (plan free) | Organización `mrsteppenwolf627's Org` | VERIFICADO 2026-11-08: proyecto `web_cuchillos` creado, región eu-central-1, plan Free (NANO). La contraseña de la base de datos la guarda el autor fuera del repositorio | CONFIRMADO por el autor 2026-11-08; aplicación de autenticación (Google Authenticator). Sin verificar si Supabase ofrece códigos de recuperación | POR CONFIRMAR |
+| Supabase | Base de datos (plan free) | Organización `mrsteppenwolf627's Org` | VERIFICADO 2026-11-08: proyecto `web_cuchillos` creado, región eu-central-1, plan Free (NANO). La contraseña de la base de datos la guarda el autor fuera del repositorio | CONFIRMADO por el autor 2026-11-08; aplicación de autenticación (Google Authenticator), única, sin respaldo: Supabase no muestra códigos de recuperación y avisa de bloqueo permanente si se pierde el acceso a la app. Riesgo asumido por el autor (R-09) | POR CONFIRMAR |
 | Registrador de dominio | Dominio (única inversión inicial) | — | NO CREADO: dominio sin elegir ni comprar | POR CONFIRMAR | POR CONFIRMAR |
 | Google Search Console | Indexación y rendimiento SEO | — | NO CREADO: requiere dominio | POR CONFIRMAR | POR CONFIRMAR |
 | Analítica | Medición de tráfico | — | NO CREADO: herramienta sin elegir | POR CONFIRMAR | POR CONFIRMAR |
@@ -40,4 +40,5 @@ Para cerrar este inventario, el autor debe confirmar por cada servicio existente
 
 - 2026-11-08: creación del inventario (F0.3). Solo GitHub verificado, según F0.1.
 - 2026-11-08: proyectos de Vercel y Supabase creados y verificados.
+- 2026-11-08: Supabase con un único autenticador (Google Authenticator) y sin respaldo; el autor asume el riesgo y lo deja pendiente (R-09).
 - 2026-11-08: 2FA confirmado por el autor en GitHub, Vercel y Supabase. Gestor de contraseñas aún sin confirmar. `.gitignore` ampliado para bloquear archivos de códigos de recuperación.

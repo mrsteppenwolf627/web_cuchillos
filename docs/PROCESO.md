@@ -79,5 +79,6 @@ Origen: `CONTEXT.md`. Probabilidad (P) e impacto (I) son estimaciones de criteri
 | R-06 | Fuga de datos o secretos por repositorio público | Baja | Alta | Secret scanning y push protection activos (D-011); `.gitignore`; no subir `.env*` ni datos dudosos | Mitigado, mantener |
 | R-07 | Scraping de fuentes con licencia o términos de uso problemáticos | Media | Media | Solo fuentes públicas/legales; datos crudos fuera del repo (`data/raw/` ignorado); revisar términos de cada fuente | Abierto |
 | R-08 | Hito de ingresos a ~3 meses no se cumple | Media | Media | Es orientativo; el posicionamiento es de largo plazo; revisar al cierre de cada oleada | Asumido |
+| R-09 | Supabase con un único autenticador (Google Authenticator) y sin códigos de recuperación: perder el móvil bloquea la cuenta de forma permanente | Baja | Alta | Pendiente: segundo autenticador independiente del móvil (gestor con 2FA o clave secreta guardada). Mientras tanto, cuidado del móvil | Asumido por el autor el 2026-11-08, respaldo pendiente |
 
 Revisión: al cerrar cada fase. Un riesgo nuevo se añade al final con el siguiente ID; uno resuelto no se borra, se marca como cerrado.
