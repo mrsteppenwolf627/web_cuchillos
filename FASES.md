@@ -4,14 +4,14 @@
 > Método: 1 chat = 1 tarea. El chat de planificación es independiente.
 > REGLA OBLIGATORIA: toda tarea termina con actualización de este archivo, commit y push a GitHub.
 
-Última actualización: 2026-11-08 (D-020 estrategia SEO programático incorporada a F1.3-F1.7; F1.1 y F1.2 hechas; Fase 1 en curso, 2 de 7 tareas; R-09 y R-10 abiertos)
+Última actualización: 2026-11-08 (F1.3 hecha: matrices de KW y de patrones programáticos con prueba de viabilidad; F1.1 a F1.3 hechas; Fase 1 en curso, 3 de 7 tareas; R-09 y R-10 abiertos)
 
 ## Estado global
 
 | Fase | Nombre | Estado |
 |---|---|---|
 | 0 | Estructura del proyecto | HECHO 2026-11-08 (F0.1, F0.2 y F0.3 hechas; R-09 abierto, asumido) |
-| 1 | Estrategia y fundamentos | EN CURSO (F1.1 y F1.2 hechas 2026-11-08; 2 de 7) |
+| 1 | Estrategia y fundamentos | EN CURSO (F1.1 a F1.3 hechas 2026-11-08; 3 de 7) |
 | 2+ | Por definir (una a una, en el chat de planificación) | — |
 
 ---
@@ -120,7 +120,7 @@ Cierre: FASES.md con Fase 0 en HECHO, commit, push.
 ---
 
 # FASE 1 · Estrategia y fundamentos
-Estado: EN CURSO (2 de 7 tareas hechas) · Duración estimada: 24-26 h (≈3 semanas a 8-10 h/semana) · Chats: 7
+Estado: EN CURSO (3 de 7 tareas hechas) · Duración estimada: 24-26 h (≈3 semanas a 8-10 h/semana) · Chats: 7
 
 ## Objetivo
 Dejar definido QUÉ se va a construir en la primera oleada y CON QUÉ criterios, antes de escribir código: qué cuchillos de cocina entran, qué palabras clave los respaldan, cómo se clasifica el catálogo, cómo es una ficha y qué datos guarda. Sin código de producto, sin dominio, sin contenido final.
@@ -173,7 +173,12 @@ Salida: data/estrategia/top10-cocina.csv y docs/estrategia/TOP10-COCINA.md.
 Cierre: 10 modelos con evidencia y fecha; ninguna descripción ni imagen de terceros copiada.
 
 ## F1.3 · Investigación de palabras clave: matrices
-Estado: PENDIENTE · ~6 h
+Estado: HECHO 2026-11-08 (resultado provisional; ver limitaciones)
+Resultado: `docs/estrategia/KW-CLUSTERS.md`, `data/kw/matriz-categorias.csv` (52 KW), `matriz-productos.csv` (60: 10 modelos x 6 patrones), `matriz-informativa.csv` (40) y `matriz-patrones.csv` (16 patrones), con 96 evidencias nuevas en `data/investigacion/evidencias.csv` (EV-0052 a EV-0147). Fuentes usadas: autocompletado de Google (42 raíces), People Also Ask y SERP de página 1 (7 consultas) y Ubersuggest sin cuenta (3 consultas, 39 cifras). 14 clústeres; P1: jamonero, santoku y santoku frente a cocinero, cocinero con cola de marca, modelos de las 4 marcas de Amazon, afilado y aceros. Patrones: 9 PASAN CONDICIONADA, 6 NO PASAN, 1 APLAZADA; ninguno pasa sin condiciones. Declarado en el documento:
+- Solo 18 de las 152 KW tienen volumen (familias jamonero, santoku y cocinero; estimaciones de herramienta gratuita, 28 de 39 cifras marcadas "Outdated"); el resto se ordena por señal cualitativa.
+- Google Trends bloqueó la primera carga (HTTP 429): se detuvo su uso según la sección 5 del método y no hay datos de Trends. Keyword Planner, AlsoAsked y AnswerThePublic no se usaron.
+- Dificultad estimada por tipo de dominio en 7 SERP de página 1, sin leer las páginas: el "hueco" es una hipótesis. Escalas de banda, dificultad y prioridad fijadas en esta tarea (heurísticas).
+- Las filas de producto heredan la confianza de F1.2 (dos modelos con confianza baja); no hay datos verificados de fabricante para ningún modelo.
 Objetivo: matrices de KW que respalden la arquitectura y las primeras fichas y artículos.
 Entradas: top 10 (F1.2), método (F1.1).
 Pasos:
@@ -244,7 +249,7 @@ Cierre: alcance de oleada 1 aprobado por el autor.
 ## Criterios de cierre de la Fase 1
 - [x] Método de investigación documentado, con limitaciones declaradas (F1.1, 2026-11-08)
 - [x] Top 10 de cuchillos de cocina con evidencia y fecha (F1.2, 2026-11-08; provisional, ver TOP10-COCINA.md sección 5)
-- [ ] Matrices de KW (categorías, productos, informativa) y clústeres priorizados
+- [x] Matrices de KW (categorías, productos, informativa), matriz de patrones con prueba de viabilidad y clústeres priorizados (F1.3, 2026-11-08; provisional, ver KW-CLUSTERS.md sección 7)
 - [ ] Taxonomía, arquitectura de navegación y patrón de URLs aprobados
 - [ ] Metodología editorial (ficha, puntuación, rankings, comparativas) aprobada
 - [ ] Modelo de datos conceptual aprobado

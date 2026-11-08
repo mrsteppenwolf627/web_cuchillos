@@ -1,0 +1,41 @@
+id_kw,kw,subtema,intencion,vol_ubersuggest_mes,banda_vol,senal_observada,dificultad_est,base_dificultad,cluster,prioridad,evidencias,notas
+KI-001,cómo afilar un cuchillo,afilado,informacional,n/d,n/d,Autocompletado (10 variantes) + PAA (4) + SERP,media,SERP observada 2026-11-08: medio de cocina + marca + tienda,K9,P1,EV-0073 EV-0096 EV-0103,
+KI-002,cómo afilar un cuchillo en casa,afilado,informacional,n/d,n/d,Autocompletado,no evaluada,sin SERP observada ni SD de herramienta,K9,P2,EV-0073,
+KI-003,cómo afilar un cuchillo con piedra,afilado,informacional,n/d,n/d,Autocompletado (2 raíces),no evaluada,sin SERP observada ni SD de herramienta,K9,P2,EV-0073 EV-0074,
+KI-004,afilar cuchillo con piedra al agua,afilado,informacional,n/d,n/d,Autocompletado,no evaluada,sin SERP observada ni SD de herramienta,K9,P3,EV-0074,
+KI-005,cómo afilar un cuchillo sin afilador,afilado,informacional,n/d,n/d,Autocompletado,no evaluada,sin SERP observada ni SD de herramienta,K9,P2,EV-0073,
+KI-006,cómo afilar un cuchillo de sierra,afilado,informacional,n/d,n/d,Autocompletado,no evaluada,sin SERP observada ni SD de herramienta,K9,P3,EV-0073,Relevante para cuchillos de pan
+KI-007,cómo afilar un cuchillo de cocina,afilado,informacional,n/d,n/d,Autocompletado (2 variantes),no evaluada,sin SERP observada ni SD de herramienta,K9,P2,EV-0073,
+KI-008,cómo afilar un cuchillo con un tenedor,afilado,informacional,n/d,n/d,Autocompletado,no evaluada,sin SERP observada ni SD de herramienta,K9,P3,EV-0073,Método de eficacia dudosa observado como sugerencia; no se recomienda sin verificación
+KI-009,cómo afilar cuchillo con piedra esmeril,afilado,informacional,n/d,n/d,Autocompletado (2 raíces),no evaluada,sin SERP observada ni SD de herramienta,K9,P3,EV-0073 EV-0074,
+KI-010,afilar cuchillo con piedra parkside / truper,afilado,informacional,n/d,n/d,Autocompletado (consultas con marca de herramienta),no evaluada,sin SERP observada ni SD de herramienta,K9,P3,EV-0074,"Marcas de piedras de afilar: accesorios, fuera de la oleada 1"
+KI-011,¿Cuál es la mejor manera de afilar un cuchillo?,afilado,informacional,n/d,n/d,PAA,media,SERP observada 2026-11-08: medio de cocina + marca + tienda,K9,P2,EV-0096,
+KI-012,¿Qué es mejor para afilar cuchillos?,afilado,comparativa,n/d,n/d,PAA,media,SERP observada 2026-11-08: medio de cocina + marca + tienda,K9,P2,EV-0096,
+KI-013,afilador de cuchillos,afilado (accesorio),transaccional,n/d,n/d,Autocompletado (10 variantes),no evaluada,sin SERP observada ni SD de herramienta,K9,P3,EV-0077,Accesorios: fuera de la oleada 1
+KI-014,afilador de cuchillos eléctrico / manual / profesional,afilado (accesorio),comparativa,n/d,n/d,Autocompletado,no evaluada,sin SERP observada ni SD de herramienta,K9,P3,EV-0077,Accesorios: fuera de la oleada 1
+KI-015,afilador de cuchillos cerca de mi / barcelona,afilado (servicio local),transaccional,n/d,n/d,Autocompletado,no evaluada,sin SERP observada ni SD de herramienta,K9,P3,EV-0077,Intención de servicio local; no encaja con un catálogo
+KI-016,cómo cuidar los cuchillos de cocina,cuidado,informacional,n/d,n/d,Autocompletado (señal débil: 1 sugerencia),no evaluada,sin SERP observada ni SD de herramienta,K11,P2,EV-0075,
+KI-017,cómo guardar los cuchillos de cocina,cuidado,informacional,n/d,n/d,Autocompletado (señal débil),no evaluada,sin SERP observada ni SD de herramienta,K11,P3,EV-0075,
+KI-018,cuchillos en el lavavajillas (aptos / meter),cuidado,informacional,n/d,n/d,Autocompletado (9 variantes),no evaluada,sin SERP observada ni SD de herramienta,K11,P2,EV-0085,Señal fuerte en una sola fuente
+KI-019,cuchillos arcos lavavajillas,cuidado,informacional,n/d,n/d,Autocompletado,no evaluada,sin SERP observada ni SD de herramienta,K11,P2,EV-0085,Marca de 6 de los 10 modelos del top 10
+KI-020,quitar óxido de cuchillos,cuidado,informacional,n/d,n/d,Autocompletado,no evaluada,sin SERP observada ni SD de herramienta,K11,P3,EV-0085,
+KI-021,cómo sujetar un cuchillo de cocina,técnica,informacional,n/d,n/d,Autocompletado (4 variantes),no evaluada,sin SERP observada ni SD de herramienta,K11,P2,EV-0084,
+KI-022,acero inoxidable o acero al carbono cuchillo,aceros,comparativa,n/d,n/d,Autocompletado + PAA (3 preguntas) + SERP,baja-media,SERP observada 2026-11-08: tiendas e industriales,K10,P1,EV-0076 EV-0099 EV-0106,La SERP mezcla tiendas e industriales
+KI-023,"¿Qué es mejor, un cuchillo de acero al carbono o acero inoxidable?",aceros,comparativa,n/d,n/d,PAA,baja-media,SERP observada 2026-11-08: tiendas e industriales,K10,P1,EV-0099 EV-0106,Variante de la fila anterior
+KI-024,mejor acero para cuchillo de cocina,aceros,comparativa,n/d,n/d,"Autocompletado + PAA (""¿Cuál es el mejor acero para hacer cuchillos?"")",baja-media,analogía con SERP observada de la comparativa inox/carbono,K10,P1,EV-0052 EV-0099,
+KI-025,mejor material para cuchillo de cocina,aceros,comparativa,n/d,n/d,Autocompletado + PAA,baja-media,analogía con SERP observada de la comparativa inox/carbono,K10,P2,EV-0052 EV-0099,
+KI-026,acero inoxidable 440c para cuchillos,aceros,informacional,n/d,n/d,Autocompletado (2 variantes),no evaluada,sin SERP observada ni SD de herramienta,K10,P2,EV-0093,
+KI-027,acero inoxidable 420 / 304 para cuchillos,aceros,informacional,n/d,n/d,Autocompletado (2 variantes),no evaluada,sin SERP observada ni SD de herramienta,K10,P3,EV-0093,
+KI-028,"cuchillo damasco (67 capas, original)",aceros,informacional,n/d,n/d,Autocompletado,no evaluada,sin SERP observada ni SD de herramienta,K12,P3,EV-0089,Afirmaciones sobre capas y originalidad difíciles de verificar
+KI-029,cuchillo de cocina acero al carbono,aceros,informacional/transaccional,n/d,n/d,Autocompletado (sin sugerencias adicionales),no evaluada,sin SERP observada ni SD de herramienta,K10,P3,EV-0090,Señal débil
+KI-030,"¿Qué es mejor, un cuchillo Santoku o un chef?",comparativa de tipo,comparativa,n/d,n/d,PAA (en 2 consultas) + autocompletado + SERP,baja-media,SERP observada 2026-11-08: solo tiendas,K2,P1,EV-0095 EV-0098 EV-0081 EV-0105,
+KI-031,¿Qué se corta con el cuchillo Santoku?,uso de tipo,informacional,n/d,n/d,PAA,baja-media,"SERP observada 2026-11-08: tiendas y marcas, sin gran medio",K2,P2,EV-0095,
+KI-032,¿Para qué se usa el cuchillo Santoku?,uso de tipo,informacional,n/d,n/d,PAA + autocompletado + Ubersuggest,baja-media,"SERP observada 2026-11-08: tiendas y marcas, sin gran medio",K2,P1,EV-0095 EV-0055 EV-0110,"Equivale a ""cuchillo santoku para que sirve"""
+KI-033,¿Cuáles son las opiniones sobre el cuchillo Santoku?,uso de tipo,comparativa,n/d,n/d,PAA,baja-media,"SERP observada 2026-11-08: tiendas y marcas, sin gran medio",K2,P3,EV-0095,
+KI-034,cuchillo nakiri vs santoku,comparativa de tipo,comparativa,n/d,n/d,Autocompletado,no evaluada,sin SERP observada ni SD de herramienta,K2,P3,EV-0061,
+KI-035,¿Qué cuchillo usan los chefs?,uso de tipo,informacional,n/d,n/d,PAA,alta,SERP observada 2026-11-08: medios generalistas + tienda especializada + Amazon,K3,P2,EV-0094,
+KI-036,¿Qué tipo de cuchillo es mejor para la cocina?,comparativa de tipo,comparativa,n/d,n/d,PAA,baja-media,SERP observada 2026-11-08: solo tiendas,K3,P2,EV-0098,
+KI-037,¿Qué cuchillo es el mejor para cortar jamón?,uso de tipo,comparativa,n/d,n/d,PAA + SERP,media,SERP observada 2026-11-08: medios gastronómicos + tiendas de jamón y cuchillería,K1,P1,EV-0100 EV-0107,
+KI-038,¿Cómo saber si un cuchillo jamonero es bueno?,criterios de compra,informacional,n/d,n/d,"PAA + autocompletado + Ubersuggest (""cuchillo jamonero bueno"")",media,SERP observada 2026-11-08: medios gastronómicos + tiendas de jamón y cuchillería,K1,P1,EV-0100 EV-0056 EV-0135,
+KI-039,¿Cuál es la mejor marca de cuchillo de cocina?,marcas,comparativa,n/d,n/d,PAA (3 variantes),alta,SERP observada 2026-11-08: medios generalistas + tienda especializada + Amazon,K14,P2,EV-0094 EV-0083,
+KI-040,¿Cuáles son los cuchillos de mejor calidad?,marcas,comparativa,n/d,n/d,PAA,alta,SERP observada 2026-11-08: medios generalistas + tienda especializada + Amazon,K14,P3,EV-0094,
