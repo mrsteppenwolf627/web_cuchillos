@@ -4,14 +4,14 @@
 > Método: 1 chat = 1 tarea. El chat de planificación es independiente.
 > REGLA OBLIGATORIA: toda tarea termina con actualización de este archivo, commit y push a GitHub.
 
-Última actualización: 2026-11-08 (Fase 1 definida; Fase 0 cerrada, R-09 abierto)
+Última actualización: 2026-11-08 (F1.1 hecha; Fase 1 en curso, 1 de 7 tareas; R-09 abierto)
 
 ## Estado global
 
 | Fase | Nombre | Estado |
 |---|---|---|
 | 0 | Estructura del proyecto | HECHO 2026-11-08 (F0.1, F0.2 y F0.3 hechas; R-09 abierto, asumido) |
-| 1 | Estrategia y fundamentos | DEFINIDA, PENDIENTE de ejecutar |
+| 1 | Estrategia y fundamentos | EN CURSO (F1.1 hecha 2026-11-08; 1 de 7) |
 | 2+ | Por definir (una a una, en el chat de planificación) | — |
 
 ---
@@ -120,7 +120,7 @@ Cierre: FASES.md con Fase 0 en HECHO, commit, push.
 ---
 
 # FASE 1 · Estrategia y fundamentos
-Estado: PENDIENTE · Duración estimada: 24-26 h (≈3 semanas a 8-10 h/semana) · Chats: 7
+Estado: EN CURSO (1 de 7 tareas hechas) · Duración estimada: 24-26 h (≈3 semanas a 8-10 h/semana) · Chats: 7
 
 ## Objetivo
 Dejar definido QUÉ se va a construir en la primera oleada y CON QUÉ criterios, antes de escribir código: qué cuchillos de cocina entran, qué palabras clave los respaldan, cómo se clasifica el catálogo, cómo es una ficha y qué datos guarda. Sin código de producto, sin dominio, sin contenido final.
@@ -143,7 +143,8 @@ Dejar definido QUÉ se va a construir en la primera oleada y CON QUÉ criterios,
 - Cada hallazgo guarda su fuente y fecha de consulta.
 
 ## F1.1 · Método de investigación y herramientas
-Estado: PENDIENTE · ~2 h
+Estado: HECHO 2026-11-08 · ~2 h
+Resultado: `docs/estrategia/METODO-INVESTIGACION.md`. Quedan declarados en el documento: limitaciones de las herramientas, fuentes legales no verificadas directamente (condiciones de Amazon.es y términos de Google) y una decisión pendiente del autor (cuenta de Google Ads para Keyword Planner, no ejecutada).
 Objetivo: fijar cómo se investiga (fuentes, herramientas gratuitas, límites legales y formato de registro) para que F1.2 y F1.3 sean reproducibles.
 Entradas: reglas de la fase, R-07.
 Pasos:
@@ -231,7 +232,7 @@ Salida: docs/estrategia/OLEADA-1.md y documentos de proyecto actualizados.
 Cierre: alcance de oleada 1 aprobado por el autor.
 
 ## Criterios de cierre de la Fase 1
-- [ ] Método de investigación documentado, con limitaciones declaradas
+- [x] Método de investigación documentado, con limitaciones declaradas (F1.1, 2026-11-08)
 - [ ] Top 10 de cuchillos de cocina con evidencia y fecha
 - [ ] Matrices de KW (categorías, productos, informativa) y clústeres priorizados
 - [ ] Taxonomía, arquitectura de navegación y patrón de URLs aprobados
