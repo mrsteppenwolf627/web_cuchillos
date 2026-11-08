@@ -4,13 +4,13 @@
 > Método: 1 chat = 1 tarea. El chat de planificación es independiente.
 > REGLA OBLIGATORIA: toda tarea termina con actualización de este archivo, commit y push a GitHub.
 
-Última actualización: 2026-11-08 (F0.1 paso 1 cerrado: entorno local Windows verificado)
+Última actualización: 2026-11-08 (F0.2 cerrada: documentación base creada)
 
 ## Estado global
 
 | Fase | Nombre | Estado |
 |---|---|---|
-| 0 | Estructura del proyecto | EN CURSO (F0.1 hecha; F0.2 y F0.3 pendientes) |
+| 0 | Estructura del proyecto | EN CURSO (F0.1 y F0.2 hechas; F0.3 pendiente) |
 | 1+ | Por definir (una a una, en el chat de planificación) | — |
 
 ---
@@ -61,7 +61,15 @@ Salida: repo privado sincronizado con primer commit en main.
 Cierre: git status limpio, push verificado en GitHub, FASES.md actualizado.
 
 ## F0.2 · Documentación base
-Estado: PENDIENTE
+Estado: HECHO (2026-11-08)
+Progreso 2026-11-08:
+- [x] Paso 1: README.md.
+- [x] Paso 2: CONTEXT.md.
+- [x] Paso 3: FASES.md (existente; actualizado).
+- [x] Paso 4: DECISIONS.md (D-001 a D-011; D-009 registra el cambio de repo privado a público).
+- [x] Paso 5: CLAUDE.md.
+- [x] Paso 6: docs/, content/, data/, src/ con .gitkeep.
+- Revisión cruzada: README, CONTEXT, DECISIONS y CLAUDE.md coherentes entre sí y con FASES.md (repo público, Node 24, npm, stack, regla de cierre). Nota: los pasos históricos de F0.1 siguen diciendo "PRIVADO"; superados por D-009.
 Entradas: bloque "Decisiones congeladas".
 Pasos:
 1. README.md (qué es, cómo arrancar en local).
@@ -88,8 +96,8 @@ Salida: docs/PROCESO.md y docs/ACCESOS.md.
 Cierre: FASES.md con Fase 0 en HECHO, commit, push.
 
 ## Criterios de cierre de la Fase 0
-- [ ] Repo privado sincronizado, primer commit en main
-- [ ] README, CONTEXT, FASES, DECISIONS, CLAUDE.md creados y coherentes
+- [x] Repo sincronizado (público por D-009), primer commit en main
+- [x] README, CONTEXT, FASES, DECISIONS, CLAUDE.md creados y coherentes
 - [ ] Plantilla de tarea validada
 - [x] Entorno local verificado
 - [ ] Push de cierre realizado según la regla obligatoria
