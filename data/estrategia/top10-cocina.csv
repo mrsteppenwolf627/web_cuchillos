@@ -1,0 +1,11 @@
+posicion,marca,modelo,formato,tipo,rango_precio,puntuacion,nota_A_ventas,nota_B_resenas,nota_C_busqueda,nota_D_medios,evidencias,confianza,observaciones,fecha_consulta
+1,Arcos,Universal (cuchillo cocinero),200 mm,chef,10-25 EUR,51.7,3,2,0,0,EV-0001 EV-0002,media,,2026-11-08
+2,Arcos,Cuchillo de cocina negro (serie sin confirmar),150 mm,cocina/universal pequeño,10-25 EUR,51.7,3,2,0,0,EV-0003 EV-0004,baja,La serie no consta en lo observado: dato no verificable. Nº de reseñas coincide con la ficha de Maitre Santoku.,2026-11-08
+3,Arcos,Latina (jamonero),250 mm,jamonero,<10 EUR,51.7,3,2,0,0,EV-0005 EV-0006,media,Tipo especializado (jamón).,2026-11-08
+4,HOSHANHO,Cuchillo chef mango pakkawood,200 mm,chef,25-50 EUR,51.7,3,2,0,0,EV-0007 EV-0008,media,Marca de venta casi exclusiva en Amazon; sin evidencia fuera de la tienda.,2026-11-08
+5,Arcos,Maitre (santoku),170 mm,santoku,10-25 EUR,45.0,2,2,0,1,EV-0009 EV-0010,baja,Nº de reseñas posiblemente compartido con la ficha de Arcos 150 mm.,2026-11-08
+6,Arcos,Universal (jamonero alveolado),240 mm,jamonero,10-25 EUR,43.3,3,1,0,0,EV-0011 EV-0012,media,Tipo especializado (jamón).,2026-11-08
+7,Arcos,Serie 2900 (chef),200 mm,chef,10-25 EUR,43.3,3,1,0,0,EV-0013 EV-0014 EV-0015 EV-0016,media,Dos fichas de la misma serie y tamaño tratadas como un modelo; reseñas sumadas (935).,2026-11-08
+8,PAUDIN,Cuchillo chef acero al carbono,200 mm,chef,25-50 EUR,40.0,2,2,0,0,EV-0017 EV-0018,media,Marca de venta casi exclusiva en Amazon.,2026-11-08
+9,Matsato,Cuchillo cocinero acero japonés,"27,8 cm (medida no aclarada: total o hoja)",chef,25-50 EUR,40.0,2,2,0,0,EV-0019 EV-0020,media,Marca de venta casi exclusiva en Amazon. La medida no está aclarada: dato no verificable.,2026-11-08
+10,MOSFiATA,Cuchillo cebollero con afilador y funda,200 mm,chef,25-50 EUR,40.0,2,2,0,0,EV-0021 EV-0022,media,Marca de venta casi exclusiva en Amazon.,2026-11-08

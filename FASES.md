@@ -4,14 +4,14 @@
 > Método: 1 chat = 1 tarea. El chat de planificación es independiente.
 > REGLA OBLIGATORIA: toda tarea termina con actualización de este archivo, commit y push a GitHub.
 
-Última actualización: 2026-11-08 (F1.1 hecha; Fase 1 en curso, 1 de 7 tareas; R-09 abierto)
+Última actualización: 2026-11-08 (F1.1 y F1.2 hechas; Fase 1 en curso, 2 de 7 tareas; R-09 y R-10 abiertos)
 
 ## Estado global
 
 | Fase | Nombre | Estado |
 |---|---|---|
 | 0 | Estructura del proyecto | HECHO 2026-11-08 (F0.1, F0.2 y F0.3 hechas; R-09 abierto, asumido) |
-| 1 | Estrategia y fundamentos | EN CURSO (F1.1 hecha 2026-11-08; 1 de 7) |
+| 1 | Estrategia y fundamentos | EN CURSO (F1.1 y F1.2 hechas 2026-11-08; 2 de 7) |
 | 2+ | Por definir (una a una, en el chat de planificación) | — |
 
 ---
@@ -120,7 +120,7 @@ Cierre: FASES.md con Fase 0 en HECHO, commit, push.
 ---
 
 # FASE 1 · Estrategia y fundamentos
-Estado: EN CURSO (1 de 7 tareas hechas) · Duración estimada: 24-26 h (≈3 semanas a 8-10 h/semana) · Chats: 7
+Estado: EN CURSO (2 de 7 tareas hechas) · Duración estimada: 24-26 h (≈3 semanas a 8-10 h/semana) · Chats: 7
 
 ## Objetivo
 Dejar definido QUÉ se va a construir en la primera oleada y CON QUÉ criterios, antes de escribir código: qué cuchillos de cocina entran, qué palabras clave los respaldan, cómo se clasifica el catálogo, cómo es una ficha y qué datos guarda. Sin código de producto, sin dominio, sin contenido final.
@@ -156,7 +156,11 @@ Cierre: método escrito, limitaciones explícitas, formato de registro definido.
 Fuera de alcance: ejecutar la investigación.
 
 ## F1.2 · Top 10 de cuchillos de cocina por popularidad
-Estado: PENDIENTE · ~4 h
+Estado: HECHO 2026-11-08 (resultado provisional; ver limitaciones)
+Resultado: `docs/estrategia/TOP10-COCINA.md`, `data/estrategia/top10-cocina.csv` y `data/investigacion/evidencias.csv` (51 evidencias). Fuentes usadas: rankings de Amazon.es (A y B, pág. 1 de dos categorías), Google Trends (C, sin señal a nivel de modelo, puntuada 0 para todos) y un solo medio español (D). Declarado en el documento:
+- El top 10 refleja ventas baratas de Amazon.es: 6 de 10 son Arcos y 4 son marcas de venta casi exclusiva en Amazon; no entra ninguna premium (Victorinox Fibrox queda 12º por desempate).
+- R-10 y D-019: las condiciones de Amazon.es limitan el uso a fines no comerciales y prohíben compilar listas de productos y precios; el autor indicó seguir con Claude in Chrome (sesión iniciada del autor) y asume el riesgo; sin asesoramiento jurídico.
+- Fuente D insuficiente (un medio, visto en fragmentos de búsqueda); dos fichas de Arcos con reseñas idénticas (4.199); serie del Arcos 150 mm y medida del Matsato sin verificar; escalas de nota fijadas en esta tarea (heurísticas).
 Objetivo: lista justificada de los 10 modelos de cuchillo de cocina más populares en España, con la evidencia de popularidad.
 Entradas: docs/estrategia/METODO-INVESTIGACION.md.
 Pasos:
@@ -233,7 +237,7 @@ Cierre: alcance de oleada 1 aprobado por el autor.
 
 ## Criterios de cierre de la Fase 1
 - [x] Método de investigación documentado, con limitaciones declaradas (F1.1, 2026-11-08)
-- [ ] Top 10 de cuchillos de cocina con evidencia y fecha
+- [x] Top 10 de cuchillos de cocina con evidencia y fecha (F1.2, 2026-11-08; provisional, ver TOP10-COCINA.md sección 5)
 - [ ] Matrices de KW (categorías, productos, informativa) y clústeres priorizados
 - [ ] Taxonomía, arquitectura de navegación y patrón de URLs aprobados
 - [ ] Metodología editorial (ficha, puntuación, rankings, comparativas) aprobada
