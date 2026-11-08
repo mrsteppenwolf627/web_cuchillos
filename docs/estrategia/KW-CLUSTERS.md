@@ -130,8 +130,10 @@ Combinatoria de referencia: 10 modelos dan 45 pares posibles para P-03; 26 combi
 11. **Contenido masivo por IA (R-04, R-11).** Que un patrón pase la prueba no garantiza que los buscadores traten bien las páginas; solo indica que existe un dato propio que las diferencia.
 12. **Incidencia de proceso.** Un lote de 4 raíces de autocompletado se descartó porque una ventana emergente de Google quitó el foco al cuadro de búsqueda; esas raíces se repitieron. El dato registrado es el de la repetición.
 13. **Rangos de Keyword Planner (addenda).** 61 KW tienen rango de volumen mensual en España (EV-0148 a EV-0208). Son rangos amplios de Google, no cifras exactas: la cuenta usada no tiene campañas con gasto. No se han recalculado bandas ni prioridades con ellos. 80 consultas salieron sin dato (no equivale a cero). La fila "qué es mejor" (1 mil-10 mil) es una fusión de variantes de Google y se excluyó.
+14. **Ahrefs gratuito (addenda).** Tramos de volumen y etiqueta de dificultad para 49 términos, de 17 semillas (EV-0209 a EV-0225). Son tramos amplios, con la dificultad visible solo en las primeras filas, y difieren del Planificador en las variantes largas. Tratar el volumen como orden de magnitud y la dificultad como indicio, no como medida. Sin recalcular prioridades.
 
 ## 8. Control de cambios
 
 - 2026-11-08: versión inicial (F1.3).
 - 2026-11-08: addenda con rangos de Keyword Planner (columnas `rango_planner_es` y `ev_planner`).
+- 2026-11-08: addenda con tramos y dificultad de Ahrefs gratuito (columnas `tramo_ahrefs_es` y `kd_ahrefs`).
