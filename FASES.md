@@ -113,4 +113,4 @@ Cierre: FASES.md con Fase 0 en HECHO, commit, push.
 
 ## Pendiente heredado de la Fase 0
 - R-09: 2FA de Supabase con un único autenticador y sin respaldo (asumido por el autor; ver docs/PROCESO.md).
-- Gestor de contraseñas, ubicación segura de los códigos de recuperación y 2FA de los servicios futuros (registrador, Search Console, analítica, afiliación) cuando se creen.
+- 2FA y gestor de contraseñas en los servicios futuros (registrador, Search Console, analítica, afiliación) cuando se creen.
