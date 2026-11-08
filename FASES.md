@@ -4,13 +4,13 @@
 > Método: 1 chat = 1 tarea. El chat de planificación es independiente.
 > REGLA OBLIGATORIA: toda tarea termina con actualización de este archivo, commit y push a GitHub.
 
-Última actualización: 2026-11-08 (F0.2 cerrada: documentación base creada)
+Última actualización: 2026-11-08 (F0.3 ejecutada: PROCESO.md y ACCESOS.md creados; pendientes de confirmación del autor)
 
 ## Estado global
 
 | Fase | Nombre | Estado |
 |---|---|---|
-| 0 | Estructura del proyecto | EN CURSO (F0.1 y F0.2 hechas; F0.3 pendiente) |
+| 0 | Estructura del proyecto | EN CURSO (F0.1 y F0.2 hechas; F0.3 ejecutada con pendientes del autor; cierre de Fase 0 tras resolverlos) |
 | 1+ | Por definir (una a una, en el chat de planificación) | — |
 
 ---
@@ -83,7 +83,14 @@ Salida: documentos coherentes entre sí en la raíz del repo.
 Cierre: revisión cruzada de coherencia, commit, push.
 
 ## F0.3 · Proceso de trabajo y accesos
-Estado: PENDIENTE
+Estado: EJECUTADA, CON PENDIENTES DEL AUTOR (2026-11-08)
+Progreso 2026-11-08:
+- [x] Paso 1: plantilla de tarea en docs/PROCESO.md (apartado 1).
+- [x] Paso 2: definición de "hecho" (apartado 2) y convención de nombres de chat (apartado 4).
+- [x] Paso 3: convención de commits (apartado 5).
+- [~] Paso 4: inventario creado en docs/ACCESOS.md. Solo GitHub verificado (F0.1). Pendiente del autor: confirmar 2FA y gestor de contraseñas en cada cuenta, y qué cuentas existen (Vercel, Supabase). Registrador, Search Console, analítica y afiliación: NO CREADOS (dependen de dominio y de herramientas sin elegir).
+- [x] Paso 5: registro de riesgos inicial (R-01 a R-08) en docs/PROCESO.md (apartado 6). Probabilidad e impacto son estimaciones de criterio, no medidas.
+- Pendiente de verificación: R-01 (términos vigentes de Vercel Hobby para uso comercial) no se ha comprobado contra los términos oficiales.
 Entradas: documentos de F0.2.
 Pasos:
 1. Plantilla de tarea (objetivo, entradas, salida, criterio de cierre) en docs/.
@@ -98,6 +105,7 @@ Cierre: FASES.md con Fase 0 en HECHO, commit, push.
 ## Criterios de cierre de la Fase 0
 - [x] Repo sincronizado (público por D-009), primer commit en main
 - [x] README, CONTEXT, FASES, DECISIONS, CLAUDE.md creados y coherentes
-- [ ] Plantilla de tarea validada
+- [ ] Plantilla de tarea validada (creada en docs/PROCESO.md; falta validación del autor)
 - [x] Entorno local verificado
-- [ ] Push de cierre realizado según la regla obligatoria
+- [ ] Push de cierre realizado según la regla obligatoria (push de F0.3 hecho; el cierre de Fase 0 queda para tras resolver los pendientes)
+- [ ] ACCESOS.md con 2FA y gestor de contraseñas confirmados por el autor

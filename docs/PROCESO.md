@@ -1,0 +1,83 @@
+# PROCESO · Método de trabajo
+
+Complementa `CLAUDE.md` (reglas para Claude Code) y `FASES.md` (fuente de verdad del plan). Si algo de este documento contradice `FASES.md`, manda `FASES.md`.
+
+## 1. Plantilla de tarea
+
+Cada tarea se define en `FASES.md` con estos campos y se ejecuta en un chat propio (1 chat = 1 tarea).
+
+```markdown
+## Fx.y · Nombre de la tarea
+Estado: PENDIENTE | EN CURSO | HECHO (fecha)
+Objetivo: una frase; qué queda resuelto al terminar.
+Entradas: documentos, datos, accesos o tareas previas necesarias.
+Pasos:
+1. ...
+Salida: archivos o resultados concretos y dónde viven.
+Cierre: condiciones verificables para dar la tarea por hecha.
+Fuera de alcance: lo que NO se hace en esta tarea (opcional, recomendado).
+```
+
+Reglas de la plantilla:
+- Cada paso es verificable (se puede comprobar si está hecho o no).
+- La salida nombra rutas de archivo, no intenciones.
+- El cierre incluye siempre la regla obligatoria (apartado 3).
+- Una tarea no se abre si sus entradas no existen.
+
+## 2. Definición de "hecho"
+
+Una tarea está HECHA solo si se cumplen todas:
+1. Todos los pasos están completados o descartados con motivo escrito.
+2. La salida existe en el repositorio y cumple el criterio de cierre de la tarea.
+3. Los documentos afectados son coherentes entre sí (`README`, `CONTEXT`, `DECISIONS`, `FASES`, `CLAUDE`).
+4. Ningún secreto, `.env*` (salvo `.env.example`) ni dato de licencia dudosa en el commit.
+5. `FASES.md` actualizado: estado, fecha de última actualización y criterios.
+6. Commit convencional y push a `main` verificados en GitHub.
+
+Lo que no se pudo verificar se deja marcado como pendiente de verificación; no se da por hecho.
+
+## 3. Cierre obligatorio de tarea
+
+1. Actualizar `FASES.md`.
+2. Commit con formato convencional (apartado 5).
+3. Push a `main` y comprobar que el commit aparece en GitHub.
+
+## 4. Nombre de los chats
+
+Formato: `Fx.y · Nombre corto de la tarea`, igual al de `FASES.md`.
+
+Ejemplos: `F0.3 · Proceso y accesos`, `F2.3 · Plantilla de ficha`.
+
+El chat de planificación se llama `PLAN · Fases` y solo define o revisa fases; no ejecuta tareas.
+
+## 5. Convención de commits
+
+Formato: `tipo: descripción en minúscula, imperativo, sin punto final`. Opcional: `tipo(ámbito): ...`.
+
+| Tipo | Uso |
+|---|---|
+| `feat` | Funcionalidad nueva de la web |
+| `fix` | Corrección de un error |
+| `docs` | Documentación del proyecto (`README`, `FASES`, `docs/`, etc.) |
+| `content` | Fichas y artículos en `content/` |
+| `data` | Datos del catálogo en `data/` (solo versionables) |
+| `chore` | Configuración, dependencias, mantenimiento |
+
+Un commit por unidad lógica. Nunca force push ni reescritura de historial sin confirmación explícita.
+
+## 6. Registro de riesgos inicial
+
+Origen: `CONTEXT.md`. Probabilidad (P) e impacto (I) son estimaciones de criterio, no medidas: Alta / Media / Baja.
+
+| ID | Riesgo | P | I | Mitigación | Estado |
+|---|---|---|---|---|---|
+| R-01 | Vercel Hobby limita el uso comercial; una web con afiliación podría incumplir los términos | Alta | Alta | Revisar los términos vigentes antes de publicar con afiliación; plan alternativo de hosting o plan de pago | Abierto, sin verificar |
+| R-02 | Supabase free se pausa por inactividad | Media | Media | Gestionado por el autor (actividad periódica o reactivación) | Asumido |
+| R-03 | Sin copia de la base de datos fuera de GitHub (`data/dumps/` está ignorado por git) | Media | Alta | Definir copia periódica externa antes de tener datos propios valiosos | Abierto, sin resolver |
+| R-04 | Penalización de buscadores por contenido masivo generado con IA | Media | Alta | Contenido original, diferenciado, con datos verificables y supervisión del autor; crecimiento por oleadas | Abierto |
+| R-05 | Competencia alta en afiliación de producto | Alta | Media | Nicho en español, calidad de fichas y navegación, vías de monetización complementarias | Asumido |
+| R-06 | Fuga de datos o secretos por repositorio público | Baja | Alta | Secret scanning y push protection activos (D-011); `.gitignore`; no subir `.env*` ni datos dudosos | Mitigado, mantener |
+| R-07 | Scraping de fuentes con licencia o términos de uso problemáticos | Media | Media | Solo fuentes públicas/legales; datos crudos fuera del repo (`data/raw/` ignorado); revisar términos de cada fuente | Abierto |
+| R-08 | Hito de ingresos a ~3 meses no se cumple | Media | Media | Es orientativo; el posicionamiento es de largo plazo; revisar al cierre de cada oleada | Asumido |
+
+Revisión: al cerrar cada fase. Un riesgo nuevo se añade al final con el siguiente ID; uno resuelto no se borra, se marca como cerrado.
