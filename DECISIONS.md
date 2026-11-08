@@ -15,3 +15,4 @@ Formato: ID · fecha · decisión · motivo. Las decisiones D-001 a D-008 estaba
 | D-009 | 2026-11-08 | Repositorio PÚBLICO en GitHub (antes: privado). Sustituye la decisión inicial de repo privado. | Orden expresa del autor: facilita el trabajo; secret scanning no existe en repos privados del plan actual. Consecuencia: todo lo subido es visible. |
 | D-010 | 2026-11-08 | Node 24 fijado en `.nvmrc`; gestor de paquetes: npm (pnpm/yarn no instalados). | Node 24 coincide con el instalado en el equipo del autor (v24.12.0). |
 | D-011 | 2026-11-08 | Secret scanning y push protection activados en GitHub. | Mitigar el riesgo de fuga de secretos en repo público. |
+| D-012 | 2026-11-08 | Se asume el riesgo R-01 (Vercel Hobby y uso comercial): se mantiene Hobby y, si hace falta, el autor pasará al plan Pro (20 USD según el autor, sin verificar). | Orden expresa del autor; evita coste inicial. Los términos de uso comercial siguen sin comprobarse. |

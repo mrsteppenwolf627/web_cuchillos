@@ -71,8 +71,8 @@ Origen: `CONTEXT.md`. Probabilidad (P) e impacto (I) son estimaciones de criteri
 
 | ID | Riesgo | P | I | Mitigación | Estado |
 |---|---|---|---|---|---|
-| R-01 | Vercel Hobby limita el uso comercial; una web con afiliación podría incumplir los términos | Alta | Alta | Revisar los términos vigentes antes de publicar con afiliación; plan alternativo de hosting o plan de pago | Abierto, sin verificar |
-| R-02 | Supabase free se pausa por inactividad | Media | Media | Gestionado por el autor (actividad periódica o reactivación) | Asumido |
+| R-01 | Vercel Hobby limita el uso comercial; una web con afiliación podría incumplir los términos | Alta | Alta | Revisar los términos vigentes antes de publicar con afiliación; plan alternativo de hosting o plan de pago | Asumido por el autor el 2026-11-08: si procede, pasará al plan Pro (importe indicado por el autor: 20 USD, sin verificar contra la tarifa vigente). Términos de uso comercial sin comprobar |
+| R-02 | Supabase free se pausa por inactividad (en la organización ya hay proyectos pausados) | Media | Media | Gestionado por el autor (actividad periódica o reactivación) | Asumido |
 | R-03 | Sin copia de la base de datos fuera de GitHub (`data/dumps/` está ignorado por git) | Media | Alta | Definir copia periódica externa antes de tener datos propios valiosos | Abierto, sin resolver |
 | R-04 | Penalización de buscadores por contenido masivo generado con IA | Media | Alta | Contenido original, diferenciado, con datos verificables y supervisión del autor; crecimiento por oleadas | Abierto |
 | R-05 | Competencia alta en afiliación de producto | Alta | Media | Nicho en español, calidad de fichas y navegación, vías de monetización complementarias | Asumido |
