@@ -16,3 +16,10 @@ Formato: ID · fecha · decisión · motivo. Las decisiones D-001 a D-008 estaba
 | D-010 | 2026-11-08 | Node 24 fijado en `.nvmrc`; gestor de paquetes: npm (pnpm/yarn no instalados). | Node 24 coincide con el instalado en el equipo del autor (v24.12.0). |
 | D-011 | 2026-11-08 | Secret scanning y push protection activados en GitHub. | Mitigar el riesgo de fuga de secretos en repo público. |
 | D-012 | 2026-11-08 | Se asume el riesgo R-01 (Vercel Hobby y uso comercial): se mantiene Hobby y, si hace falta, el autor pasará al plan Pro (20 USD según el autor, sin verificar). | Orden expresa del autor; evita coste inicial. Los términos de uso comercial siguen sin comprobarse. |
+| D-013 | 2026-11-08 | Categorías base del catálogo: cuchillos de cocina, navajas, outdoor, caza, EDC y japoneses, más piedras de afilar y accesorios. Ampliación por oleadas. | Decisión del autor; visión de catálogo amplio con crecimiento progresivo. |
+| D-014 | 2026-11-08 | Primera oleada: solo cuchillos de cocina. | Decisión del autor; acotar alcance inicial (8-10 h/semana). |
+| D-015 | 2026-11-08 | Criterios de clasificación: tipo, uso, acero, origen, precio, marca y nivel de usuario. | Decisión del autor. Qué criterios son categorías indexables y cuáles filtros se define en F1.4. |
+| D-016 | 2026-11-08 | Las fichas de la oleada 1 salen de los 10 cuchillos de cocina más populares encontrados online, con KW research y matrices de KW. Datos solo de elaboración propia en el repo público. | Decisión del autor; ancla el catálogo en demanda real. Riesgos: R-07, R-04. |
+| D-017 | 2026-11-08 | Ficha = técnica objetiva + reseña con veredicto/puntuación; habrá rankings y comparativas. Sin afirmar pruebas no realizadas. | Decisión del autor (ambas). La transparencia sobre la base de cada reseña la fija esta fase por falta de colección propia. |
+| D-018 | 2026-11-08 | Herramientas solo gratuitas + Claude in Chrome. Dominio .com preferido, sin elegir ni comprar hasta tener una web mínima. Afiliación (cuentas y programas) aplazada a fases posteriores. | Decisión del autor; coste inicial limitado a dominio, que se retrasa. |
+

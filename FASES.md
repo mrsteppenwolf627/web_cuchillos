@@ -4,14 +4,15 @@
 > Método: 1 chat = 1 tarea. El chat de planificación es independiente.
 > REGLA OBLIGATORIA: toda tarea termina con actualización de este archivo, commit y push a GitHub.
 
-Última actualización: 2026-11-08 (Fase 0 cerrada por orden del autor; R-09 abierto)
+Última actualización: 2026-11-08 (Fase 1 definida; Fase 0 cerrada, R-09 abierto)
 
 ## Estado global
 
 | Fase | Nombre | Estado |
 |---|---|---|
 | 0 | Estructura del proyecto | HECHO 2026-11-08 (F0.1, F0.2 y F0.3 hechas; R-09 abierto, asumido) |
-| 1+ | Por definir (una a una, en el chat de planificación) | — |
+| 1 | Estrategia y fundamentos | DEFINIDA, PENDIENTE de ejecutar |
+| 2+ | Por definir (una a una, en el chat de planificación) | — |
 
 ---
 
@@ -114,3 +115,133 @@ Cierre: FASES.md con Fase 0 en HECHO, commit, push.
 ## Pendiente heredado de la Fase 0
 - R-09: 2FA de Supabase con un único autenticador y sin respaldo (asumido por el autor; ver docs/PROCESO.md).
 - 2FA y gestor de contraseñas en los servicios futuros (registrador, Search Console, analítica, afiliación) cuando se creen.
+
+
+---
+
+# FASE 1 · Estrategia y fundamentos
+Estado: PENDIENTE · Duración estimada: 24-26 h (≈3 semanas a 8-10 h/semana) · Chats: 7
+
+## Objetivo
+Dejar definido QUÉ se va a construir en la primera oleada y CON QUÉ criterios, antes de escribir código: qué cuchillos de cocina entran, qué palabras clave los respaldan, cómo se clasifica el catálogo, cómo es una ficha y qué datos guarda. Sin código de producto, sin dominio, sin contenido final.
+
+## Decisiones de partida (registradas en DECISIONS.md, D-013 a D-018)
+- Categorías base del catálogo: cuchillos de cocina, navajas, outdoor, caza, EDC y cuchillos japoneses, más piedras de afilar y accesorios. Se amplía por oleadas.
+- Primera oleada: SOLO cuchillos de cocina.
+- Criterios de clasificación: tipo, uso, acero, origen, precio, marca y nivel de usuario.
+- Selección de fichas: primero se buscan online los 10 cuchillos de cocina más populares y se construye a partir de ahí, siempre con investigación de palabras clave (KW research) y matrices de KW.
+- Ficha: técnica objetiva + reseña con veredicto/puntuación. Habrá rankings y comparativas.
+- Herramientas: solo gratuitas + Claude in Chrome para acceso online. Dominio: .com preferido; sin elegir ni comprar hasta que exista una web mínima bien construida.
+- Afiliación: programas y cuentas se dejan para fases posteriores (el modelo de datos reserva los campos).
+- Conocimiento propio sin colección grande de cuchillos: la autoría se apoya en criterio experto y datos verificados, nunca en pruebas inventadas.
+
+## Reglas específicas de la fase
+- No se afirma haber probado un cuchillo que no se ha probado. Toda reseña declara en qué se basa (datos del fabricante, análisis de especificaciones, fuentes contrastadas, uso propio).
+- Los volúmenes de búsqueda con herramientas gratuitas son aproximados: sirven para ordenar y comparar, no como cifras exactas.
+- Repo público: en `data/` solo se versionan matrices y listas de elaboración propia. No se copian descripciones, imágenes, reseñas ni tablas de terceros (R-07). Nada de datos crudos de scraping en git.
+- Acceso web con Claude in Chrome: lectura manual y puntual. Sin extracción masiva de Amazon.es ni de sitios cuyos términos la prohíban.
+- Cada hallazgo guarda su fuente y fecha de consulta.
+
+## F1.1 · Método de investigación y herramientas
+Estado: PENDIENTE · ~2 h
+Objetivo: fijar cómo se investiga (fuentes, herramientas gratuitas, límites legales y formato de registro) para que F1.2 y F1.3 sean reproducibles.
+Entradas: reglas de la fase, R-07.
+Pasos:
+1. Inventariar herramientas gratuitas utilizables (Google Trends, autocompletado, People Also Ask, Keyword Planner si procede, AlsoAsked/Ubersuggest en límites gratuitos) y sus limitaciones reales.
+2. Definir qué fuentes de popularidad se aceptan (rankings de ventas, volumen de reseñas, tendencia de búsqueda, listas de medios especializados) y cómo se pondera cada una.
+3. Definir el formato de registro (columnas, fuente, fecha) y la carpeta de trabajo.
+Salida: docs/estrategia/METODO-INVESTIGACION.md.
+Cierre: método escrito, limitaciones explícitas, formato de registro definido.
+Fuera de alcance: ejecutar la investigación.
+
+## F1.2 · Top 10 de cuchillos de cocina por popularidad
+Estado: PENDIENTE · ~4 h
+Objetivo: lista justificada de los 10 modelos de cuchillo de cocina más populares en España, con la evidencia de popularidad.
+Entradas: docs/estrategia/METODO-INVESTIGACION.md.
+Pasos:
+1. Recopilar candidatos desde las fuentes definidas en F1.1 (con Claude in Chrome).
+2. Puntuar popularidad con la ponderación del método y documentar la evidencia.
+3. Elegir los 10 y anotar para cada uno: marca, modelo, tipo, rango de precio, fuentes.
+4. Señalar candidatos descartados con motivo.
+Salida: data/estrategia/top10-cocina.csv y docs/estrategia/TOP10-COCINA.md.
+Cierre: 10 modelos con evidencia y fecha; ninguna descripción ni imagen de terceros copiada.
+
+## F1.3 · Investigación de palabras clave: matrices
+Estado: PENDIENTE · ~6 h
+Objetivo: matrices de KW que respalden la arquitectura y las primeras fichas y artículos.
+Entradas: top 10 (F1.2), método (F1.1).
+Pasos:
+1. Matriz de categoría: tipos de cuchillo de cocina y usos (semillas → variaciones).
+2. Matriz de producto: por cada uno de los 10 modelos (modelo + opiniones, review, precio, vs, comprar, mejor alternativa).
+3. Matriz informativa: afilado, cuidado, técnicas, aceros, comparativas de tipo.
+4. Clasificar cada KW por intención (informacional, comparativa, transaccional), dificultad estimada y volumen relativo.
+5. Agrupar en clústeres e identificar hueco/oportunidad frente a la competencia visible en la SERP.
+Salida: data/kw/matriz-categorias.csv, matriz-productos.csv, matriz-informativa.csv y docs/estrategia/KW-CLUSTERS.md.
+Cierre: clústeres definidos, KW priorizadas, limitaciones de los datos declaradas.
+
+## F1.4 · Taxonomía y arquitectura de información
+Estado: PENDIENTE · ~4 h
+Objetivo: cómo se clasifica y navega el catálogo, y cómo se estructura la URL.
+Entradas: clústeres (F1.3), criterios de clasificación decididos.
+Pasos:
+1. Definir las facetas (tipo, uso, acero, origen, precio, marca, nivel de usuario): valores permitidos para cuchillos de cocina.
+2. Distinguir qué facetas son categorías indexables y cuáles son filtros no indexables.
+3. Diseñar el árbol de navegación (menú principal, subcategorías, hubs de blog) y el patrón de URLs.
+4. Definir el enlazado interno entre fichas, rankings, comparativas y blog.
+5. Dejar la estructura preparada para las categorías futuras.
+Salida: docs/estrategia/TAXONOMIA.md y docs/estrategia/ARQUITECTURA.md.
+Cierre: árbol de navegación y URLs aprobados; criterio indexable/filtro justificado con las KW.
+
+## F1.5 · Metodología editorial: ficha, puntuación, rankings y comparativas
+Estado: PENDIENTE · ~3 h
+Objetivo: definir cómo es una ficha (técnica + reseña) y cómo se puntúa y compara, con honestidad sobre la base de cada juicio.
+Entradas: taxonomía (F1.4), reglas de la fase.
+Pasos:
+1. Plantilla de ficha técnica (campos objetivos y su fuente).
+2. Plantilla de reseña: secciones, veredicto, pros/contras, a quién va dirigido.
+3. Criterios y escala de puntuación, y declaración de base de cada reseña.
+4. Plantillas de ranking y de comparativa (cuándo se crea cada una).
+5. Guía de estilo y checklist de supervisión del autor (contenido con IA, R-04).
+Salida: docs/estrategia/METODOLOGIA-EDITORIAL.md.
+Cierre: plantillas y criterios cerrados; política de transparencia escrita.
+
+## F1.6 · Modelo de datos conceptual
+Estado: PENDIENTE · ~3 h
+Objetivo: esquema conceptual de datos que sostiene fichas, taxonomía, puntuaciones, rankings, comparativas y enlaces futuros de afiliación.
+Entradas: F1.4, F1.5.
+Pasos:
+1. Entidades y relaciones (cuchillo, marca, categoría/facetas, especificaciones, reseña/puntuación, ranking, comparativa, artículo, enlace de compra, imagen).
+2. Campos por entidad, tipos, obligatoriedad y reglas de calidad (fuente, fecha de verificación).
+3. Reservar campos para afiliación (sin programas definidos) y para imágenes con su política de origen.
+4. Definir qué vive en Supabase y qué en `content/` (Markdown/MDX).
+Salida: docs/estrategia/MODELO-DATOS.md (esquema conceptual; sin migraciones SQL).
+Cierre: modelo revisado contra la ficha y la taxonomía; ningún campo sin propósito.
+Fuera de alcance: crear tablas en Supabase.
+
+## F1.7 · Alcance de la primera oleada y cierre
+Estado: PENDIENTE · ~2 h
+Objetivo: cerrar la lista de la primera oleada y dejar listas las entradas de la Fase 2.
+Entradas: F1.2 a F1.6.
+Pasos:
+1. Lista final de fichas de la oleada 1, rankings/comparativas y artículos de blog iniciales (mapeados a KW).
+2. Estimar esfuerzo de contenido frente a 8-10 h/semana.
+3. Actualizar CONTEXT.md, DECISIONS.md y registro de riesgos.
+4. Proponer la definición de la Fase 2 para el chat de planificación.
+Salida: docs/estrategia/OLEADA-1.md y documentos de proyecto actualizados.
+Cierre: alcance de oleada 1 aprobado por el autor.
+
+## Criterios de cierre de la Fase 1
+- [ ] Método de investigación documentado, con limitaciones declaradas
+- [ ] Top 10 de cuchillos de cocina con evidencia y fecha
+- [ ] Matrices de KW (categorías, productos, informativa) y clústeres priorizados
+- [ ] Taxonomía, arquitectura de navegación y patrón de URLs aprobados
+- [ ] Metodología editorial (ficha, puntuación, rankings, comparativas) aprobada
+- [ ] Modelo de datos conceptual aprobado
+- [ ] Alcance de la oleada 1 cerrado
+- [ ] CONTEXT.md y DECISIONS.md actualizados; push realizado según la regla obligatoria
+
+## Fuera de la Fase 1 (aplazado)
+- Dominio y marca (se decide antes del lanzamiento; preferencia .com).
+- Programas de afiliación y altas de cuenta.
+- Canal de RRSS/YouTube (idea de futuro, no de presente).
+- Código, tablas en Supabase y contenido final.
