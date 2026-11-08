@@ -4,13 +4,13 @@
 > Método: 1 chat = 1 tarea. El chat de planificación es independiente.
 > REGLA OBLIGATORIA: toda tarea termina con actualización de este archivo, commit y push a GitHub.
 
-Última actualización: 2026-11-08 (F0.1 en curso)
+Última actualización: 2026-11-08 (F0.1 HECHA)
 
 ## Estado global
 
 | Fase | Nombre | Estado |
 |---|---|---|
-| 0 | Estructura del proyecto | EN CURSO (F0.1 parcial) |
+| 0 | Estructura del proyecto | EN CURSO (F0.1 hecha; F0.2 y F0.3 pendientes) |
 | 1+ | Por definir (una a una, en el chat de planificación) | — |
 
 ---
@@ -39,14 +39,14 @@ proceso chat=tarea y entorno local verificado. Sin código de producto, sin domi
   (gestionada por el autor), copia de la BD fuera de GitHub (pendiente), contenido masivo por IA.
 
 ## F0.1 · Repositorio y entorno local
-Estado: EN CURSO (pendiente solo: paso 1, verificación de git, gh y Node en el equipo Windows)
+Estado: HECHO (2026-11-08), con una excepción documentada en el paso 1
 Progreso 2026-11-08:
 - [x] Paso 2: git init, rama main.
 - [x] Paso 3: .gitignore.
 - [x] Paso 4: .env.example vacío.
-- [x] Paso 5: .nvmrc = 24 (Node del equipo: v24.22.0).
+- [x] Paso 5: .nvmrc = 24. Basado en el Node que reporta la app de escritorio de Claude (v24.22.0), que no es necesariamente el Node instalado en el sistema del autor: confirmar con `node -v`.
 - [x] Paso 6: repo https://github.com/mrsteppenwolf627/web_cuchillos creado, remoto origin añadido, historial subido a main. CAMBIO DE DECISIÓN 2026-11-08: el repo pasó de PRIVADO a PÚBLICO por orden expresa del autor (facilita el trabajo; secret scanning no existe en repos privados del plan actual). Consecuencia: todo lo que se suba es visible; nada de secretos, datos con licencia dudosa ni borradores sensibles.
-- [ ] Paso 1: verificado solo en el shell Linux de la sesión (git 2.34.1, Node 22, npm 10.9.9). Pendiente confirmar git, gh y Node/gestor de paquetes en el equipo Windows.
+- [~] Paso 1: verificado solo en el shell Linux de la sesión (git 2.34.1, Node 22, npm 10.9.9). NO verificado en el equipo Windows del autor (git, gh, Node del sistema, gestor de paquetes): desde la sesión no se pueden ejecutar comandos en su terminal. Queda como comprobación manual del autor (`git --version`, `gh auth status`, `node -v`, `npm -v`) y alimenta el criterio "Entorno local verificado" de la Fase 0.
 - [x] Paso 7: Secret Protection (secret scanning alerts) y Push protection activados el 2026-11-08 en Settings > Advanced Security; verificado en la interfaz (Push protection = On).
 Entradas: carpeta local "web cuchillos", cuenta GitHub, Claude Code abierto.
 Pasos:
