@@ -39,15 +39,15 @@ proceso chat=tarea y entorno local verificado. Sin código de producto, sin domi
   (gestionada por el autor), copia de la BD fuera de GitHub (pendiente), contenido masivo por IA.
 
 ## F0.1 · Repositorio y entorno local
-Estado: EN CURSO (pendiente: paso 7 y verificación de herramientas en el equipo Windows)
+Estado: EN CURSO (pendiente solo: paso 1, verificación de git, gh y Node en el equipo Windows)
 Progreso 2026-11-08:
 - [x] Paso 2: git init, rama main.
 - [x] Paso 3: .gitignore.
 - [x] Paso 4: .env.example vacío.
 - [x] Paso 5: .nvmrc = 24 (Node del equipo: v24.22.0).
-- [x] Paso 6: repo privado https://github.com/mrsteppenwolf627/web_cuchillos creado, remoto origin añadido, historial subido a main (último commit beebd78). Verificado con git ls-remote y API (private=true).
+- [x] Paso 6: repo https://github.com/mrsteppenwolf627/web_cuchillos creado, remoto origin añadido, historial subido a main. CAMBIO DE DECISIÓN 2026-11-08: el repo pasó de PRIVADO a PÚBLICO por orden expresa del autor (facilita el trabajo; secret scanning no existe en repos privados del plan actual). Consecuencia: todo lo que se suba es visible; nada de secretos, datos con licencia dudosa ni borradores sensibles.
 - [ ] Paso 1: verificado solo en el shell Linux de la sesión (git 2.34.1, Node 22, npm 10.9.9). Pendiente confirmar git, gh y Node/gestor de paquetes en el equipo Windows.
-- [ ] Paso 7: secret scanning y push protection NO disponibles en este repo. Revisado el 2026-11-08 en Settings > Advanced Security: solo aparecen Dependency graph y Dependabot (sin opciones de secret scanning). Pendiente decidir en el chat de planificación; mientras tanto, .gitignore excluye .env* (la regla de no subir secretos se formalizará en CLAUDE.md, F0.2).
+- [x] Paso 7: Secret Protection (secret scanning alerts) y Push protection activados el 2026-11-08 en Settings > Advanced Security; verificado en la interfaz (Push protection = On).
 Entradas: carpeta local "web cuchillos", cuenta GitHub, Claude Code abierto.
 Pasos:
 1. Verificar herramientas: git, GitHub CLI (gh) autenticado, Node (LTS) y gestor de paquetes.
