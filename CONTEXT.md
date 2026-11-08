@@ -26,6 +26,9 @@ Web de cuchillos para generar ingresos pasivos: catálogo/directorio con una fic
 - Supabase: proyecto `web_cuchillos` (plan Free, eu-central-1).
 - Dominio, Search Console, analítica y programas de afiliación: sin crear (ver `docs/ACCESOS.md`).
 
+## Estrategia SEO
+Cola larga + SEO programático sobre todo el catálogo (D-020). Hubs de categoría y de tipo en versión mínima, producidos después de las primeras fichas y rankings. Control de calidad: cada página programática exige unicidad mínima; las que no la cumplan no se indexan (R-11).
+
 ## Monetización
 Varias vías a la vez. Principal: afiliación desde las fichas. El resto, como complemento. Los enlaces de afiliación llevan siempre aviso de afiliación visible.
 

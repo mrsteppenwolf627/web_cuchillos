@@ -4,7 +4,7 @@
 > Método: 1 chat = 1 tarea. El chat de planificación es independiente.
 > REGLA OBLIGATORIA: toda tarea termina con actualización de este archivo, commit y push a GitHub.
 
-Última actualización: 2026-11-08 (F1.1 y F1.2 hechas; Fase 1 en curso, 2 de 7 tareas; R-09 y R-10 abiertos)
+Última actualización: 2026-11-08 (D-020 estrategia SEO programático incorporada a F1.3-F1.7; F1.1 y F1.2 hechas; Fase 1 en curso, 2 de 7 tareas; R-09 y R-10 abiertos)
 
 ## Estado global
 
@@ -125,7 +125,7 @@ Estado: EN CURSO (2 de 7 tareas hechas) · Duración estimada: 24-26 h (≈3 sem
 ## Objetivo
 Dejar definido QUÉ se va a construir en la primera oleada y CON QUÉ criterios, antes de escribir código: qué cuchillos de cocina entran, qué palabras clave los respaldan, cómo se clasifica el catálogo, cómo es una ficha y qué datos guarda. Sin código de producto, sin dominio, sin contenido final.
 
-## Decisiones de partida (registradas en DECISIONS.md, D-013 a D-018)
+## Decisiones de partida (registradas en DECISIONS.md, D-013 a D-018 y D-020)
 - Categorías base del catálogo: cuchillos de cocina, navajas, outdoor, caza, EDC y cuchillos japoneses, más piedras de afilar y accesorios. Se amplía por oleadas.
 - Primera oleada: SOLO cuchillos de cocina.
 - Criterios de clasificación: tipo, uso, acero, origen, precio, marca y nivel de usuario.
@@ -134,6 +134,7 @@ Dejar definido QUÉ se va a construir en la primera oleada y CON QUÉ criterios,
 - Herramientas: solo gratuitas + Claude in Chrome para acceso online. Dominio: .com preferido; sin elegir ni comprar hasta que exista una web mínima bien construida.
 - Afiliación: programas y cuentas se dejan para fases posteriores (el modelo de datos reserva los campos).
 - Conocimiento propio sin colección grande de cuchillos: la autoría se apoya en criterio experto y datos verificados, nunca en pruebas inventadas.
+- Estrategia SEO (D-020): cola larga + SEO programático sobre todo el catálogo. El top 10 es el piloto, no el techo. Hubs de categoría y de tipo se producen DESPUÉS de las primeras fichas y rankings, en versión mínima y ampliable.
 
 ## Reglas específicas de la fase
 - No se afirma haber probado un cuchillo que no se ha probado. Toda reseña declara en qué se basa (datos del fabricante, análisis de especificaciones, fuentes contrastadas, uso propio).
@@ -181,8 +182,9 @@ Pasos:
 3. Matriz informativa: afilado, cuidado, técnicas, aceros, comparativas de tipo.
 4. Clasificar cada KW por intención (informacional, comparativa, transaccional), dificultad estimada y volumen relativo.
 5. Agrupar en clústeres e identificar hueco/oportunidad frente a la competencia visible en la SERP.
-Salida: data/kw/matriz-categorias.csv, matriz-productos.csv, matriz-informativa.csv y docs/estrategia/KW-CLUSTERS.md.
-Cierre: clústeres definidos, KW priorizadas, limitaciones de los datos declaradas.
+6. Matriz de patrones programáticos (D-020): plantillas de búsqueda reutilizables ([modelo] opiniones, [modelo] vs [modelo], mejor [tipo] para [uso], [tipo] de [acero], [marca] [tipo]…). Por patrón: entidades que lo rellenan, nº potencial de páginas, intención, dificultad/volumen relativo y PRUEBA DE VIABILIDAD: qué dato o criterio propio hace distinta cada página (si no hay, el patrón no pasa).
+Salida: data/kw/matriz-categorias.csv, matriz-productos.csv, matriz-informativa.csv, matriz-patrones.csv y docs/estrategia/KW-CLUSTERS.md.
+Cierre: clústeres definidos, KW y patrones priorizados con su prueba de viabilidad, limitaciones de los datos declaradas.
 
 ## F1.4 · Taxonomía y arquitectura de información
 Estado: PENDIENTE · ~4 h
@@ -195,7 +197,8 @@ Pasos:
 4. Definir el enlazado interno entre fichas, rankings, comparativas y blog.
 5. Dejar la estructura preparada para las categorías futuras.
 Salida: docs/estrategia/TAXONOMIA.md y docs/estrategia/ARQUITECTURA.md.
-Cierre: árbol de navegación y URLs aprobados; criterio indexable/filtro justificado con las KW.
+6. (D-020) Control de la explosión combinatoria: qué combinaciones de facetas y patrones generan página indexable y cuáles no; regla de noindex/canonical para las que no cumplan el umbral de calidad.
+Cierre: árbol de navegación y URLs aprobados; criterio indexable/filtro justificado con las KW y con la matriz de patrones.
 
 ## F1.5 · Metodología editorial: ficha, puntuación, rankings y comparativas
 Estado: PENDIENTE · ~3 h
@@ -208,7 +211,8 @@ Pasos:
 4. Plantillas de ranking y de comparativa (cuándo se crea cada una).
 5. Guía de estilo y checklist de supervisión del autor (contenido con IA, R-04).
 Salida: docs/estrategia/METODOLOGIA-EDITORIAL.md.
-Cierre: plantillas y criterios cerrados; política de transparencia escrita.
+6. (D-020) Umbral de unicidad por tipo de página programática: contenido mínimo propio (veredicto, datos verificados, criterio comparativo) sin el cual la página no se publica ni se indexa.
+Cierre: plantillas y criterios cerrados; política de transparencia y umbral de unicidad escritos.
 
 ## F1.6 · Modelo de datos conceptual
 Estado: PENDIENTE · ~3 h
@@ -220,7 +224,8 @@ Pasos:
 3. Reservar campos para afiliación (sin programas definidos) y para imágenes con su política de origen.
 4. Definir qué vive en Supabase y qué en `content/` (Markdown/MDX).
 Salida: docs/estrategia/MODELO-DATOS.md (esquema conceptual; sin migraciones SQL).
-Cierre: modelo revisado contra la ficha y la taxonomía; ningún campo sin propósito.
+5. (D-020) Comprobar que el modelo permite generar cada patrón programático a partir de datos estructurados (por ejemplo, comparativa A vs B desde especificaciones y puntuaciones) y que cada página tiene datos propios suficientes.
+Cierre: modelo revisado contra la ficha, la taxonomía y los patrones; ningún campo sin propósito.
 Fuera de alcance: crear tablas en Supabase.
 
 ## F1.7 · Alcance de la primera oleada y cierre
@@ -233,6 +238,7 @@ Pasos:
 3. Actualizar CONTEXT.md, DECISIONS.md y registro de riesgos.
 4. Proponer la definición de la Fase 2 para el chat de planificación.
 Salida: docs/estrategia/OLEADA-1.md y documentos de proyecto actualizados.
+5. (D-020) Orden de producción de la oleada 1: primeras fichas y rankings por tipo, luego hubs mínimos de tipo y categoría, ampliados al crecer el clúster; lanzamiento del sistema programático por lotes con control de calidad.
 Cierre: alcance de oleada 1 aprobado por el autor.
 
 ## Criterios de cierre de la Fase 1
