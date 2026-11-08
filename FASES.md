@@ -39,17 +39,15 @@ proceso chat=tarea y entorno local verificado. Sin código de producto, sin domi
   (gestionada por el autor), copia de la BD fuera de GitHub (pendiente), contenido masivo por IA.
 
 ## F0.1 · Repositorio y entorno local
-Estado: EN CURSO (bloqueada en pasos 1 parcial, 6 y 7: falta autenticación GitHub)
+Estado: EN CURSO (pendiente: paso 7 y verificación de herramientas en el equipo Windows)
 Progreso 2026-11-08:
 - [x] Paso 2: git init, rama main.
 - [x] Paso 3: .gitignore.
 - [x] Paso 4: .env.example vacío.
 - [x] Paso 5: .nvmrc = 24 (Node del equipo: v24.22.0).
-- [x] Primer commit local (051115c). Identidad git configurada solo a nivel de repo.
-- [ ] Paso 1: git y Node verificados en el entorno de trabajo (Linux VM: git 2.34.1, Node 22, npm 10.9.9);
-      gh NO instalado y sin autenticar; el git de Windows del equipo no se pudo verificar desde ese shell.
-- [ ] Paso 6: repo privado en GitHub, remoto y push. Pendiente de autenticación.
-- [ ] Paso 7: secret scanning y push protection. Pendiente (requiere repo creado).
+- [x] Paso 6: repo privado https://github.com/mrsteppenwolf627/web_cuchillos creado, remoto origin añadido, historial subido a main (último commit beebd78). Verificado con git ls-remote y API (private=true).
+- [ ] Paso 1: verificado solo en el shell Linux de la sesión (git 2.34.1, Node 22, npm 10.9.9). Pendiente confirmar git, gh y Node/gestor de paquetes en el equipo Windows.
+- [ ] Paso 7: secret scanning y push protection NO activados. La API de ajustes del repo está bloqueada desde esta sesión (HTTP 403). Se activa a mano en GitHub: Settings > Advanced Security.
 Entradas: carpeta local "web cuchillos", cuenta GitHub, Claude Code abierto.
 Pasos:
 1. Verificar herramientas: git, GitHub CLI (gh) autenticado, Node (LTS) y gestor de paquetes.
