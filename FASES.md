@@ -4,7 +4,7 @@
 > Método: 1 chat = 1 tarea. El chat de planificación es independiente.
 > REGLA OBLIGATORIA: toda tarea termina con actualización de este archivo, commit y push a GitHub.
 
-Última actualización: 2026-11-08 (F0.1 paso 1 verificado en Windows; falta gh)
+Última actualización: 2026-11-08 (F0.1 paso 1 cerrado: entorno local Windows verificado)
 
 ## Estado global
 
@@ -39,14 +39,14 @@ proceso chat=tarea y entorno local verificado. Sin código de producto, sin domi
   (gestionada por el autor), copia de la BD fuera de GitHub (pendiente), contenido masivo por IA.
 
 ## F0.1 · Repositorio y entorno local
-Estado: HECHO (2026-11-08), con una excepción documentada en el paso 1
+Estado: HECHO (2026-11-08)
 Progreso 2026-11-08:
 - [x] Paso 2: git init, rama main.
 - [x] Paso 3: .gitignore.
 - [x] Paso 4: .env.example vacío.
 - [x] Paso 5: .nvmrc = 24. Basado en el Node que reporta la app de escritorio de Claude (v24.22.0), que no es necesariamente el Node instalado en el sistema del autor: confirmar con `node -v`.
 - [x] Paso 6: repo https://github.com/mrsteppenwolf627/web_cuchillos creado, remoto origin añadido, historial subido a main. CAMBIO DE DECISIÓN 2026-11-08: el repo pasó de PRIVADO a PÚBLICO por orden expresa del autor (facilita el trabajo; secret scanning no existe en repos privados del plan actual). Consecuencia: todo lo que se suba es visible; nada de secretos, datos con licencia dudosa ni borradores sensibles.
-- [~] Paso 1: verificado en el equipo Windows del autor el 2026-11-08: git 2.52.0.windows.1 OK; Node v24.12.0 OK (coincide con .nvmrc = 24); npm 11.8.0 OK; pnpm/yarn no instalados (se usa npm); remoto origin, `git status` limpio y sincronizado con origin/main, user.name y user.email configurados. FALTA: GitHub CLI (gh) no instalado (no está en PATH ni en las rutas habituales), por lo que `gh auth status` no se puede verificar. Pendiente: instalar gh y autenticarlo (con confirmación del autor) y volver a comprobar `gh --version` y `gh auth status`.
+- [x] Paso 1: verificado en el equipo Windows del autor el 2026-11-08: git 2.52.0.windows.1; gh 2.103.3 (instalado manualmente en C:\Program Files\GitHub CLI\, autenticado en github.com como mrsteppenwolf627, protocolo https); Node v24.12.0 (coincide con .nvmrc = 24); npm 11.8.0; pnpm/yarn no instalados (se usa npm); remoto origin, `git status` limpio y sincronizado con origin/main, user.name y user.email configurados.
 - [x] Paso 7: Secret Protection (secret scanning alerts) y Push protection activados el 2026-11-08 en Settings > Advanced Security; verificado en la interfaz (Push protection = On).
 Entradas: carpeta local "web cuchillos", cuenta GitHub, Claude Code abierto.
 Pasos:
@@ -91,5 +91,5 @@ Cierre: FASES.md con Fase 0 en HECHO, commit, push.
 - [ ] Repo privado sincronizado, primer commit en main
 - [ ] README, CONTEXT, FASES, DECISIONS, CLAUDE.md creados y coherentes
 - [ ] Plantilla de tarea validada
-- [ ] Entorno local verificado
+- [x] Entorno local verificado
 - [ ] Push de cierre realizado según la regla obligatoria
