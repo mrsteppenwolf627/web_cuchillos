@@ -129,7 +129,9 @@ Combinatoria de referencia: 10 modelos dan 45 pares posibles para P-03; 26 combi
 10. **Marcas de Amazon:** su señal puede deberse a la propia dinámica de la plataforma y no a demanda independiente. No hay evidencia fuera de Amazon (hereda la limitación 1 de F1.2).
 11. **Contenido masivo por IA (R-04, R-11).** Que un patrón pase la prueba no garantiza que los buscadores traten bien las páginas; solo indica que existe un dato propio que las diferencia.
 12. **Incidencia de proceso.** Un lote de 4 raíces de autocompletado se descartó porque una ventana emergente de Google quitó el foco al cuadro de búsqueda; esas raíces se repitieron. El dato registrado es el de la repetición.
+13. **Rangos de Keyword Planner (addenda).** 61 KW tienen rango de volumen mensual en España (EV-0148 a EV-0208). Son rangos amplios de Google, no cifras exactas: la cuenta usada no tiene campañas con gasto. No se han recalculado bandas ni prioridades con ellos. 80 consultas salieron sin dato (no equivale a cero). La fila "qué es mejor" (1 mil-10 mil) es una fusión de variantes de Google y se excluyó.
 
 ## 8. Control de cambios
 
 - 2026-11-08: versión inicial (F1.3).
+- 2026-11-08: addenda con rangos de Keyword Planner (columnas `rango_planner_es` y `ev_planner`).
