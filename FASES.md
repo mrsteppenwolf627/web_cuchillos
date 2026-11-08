@@ -4,14 +4,14 @@
 > Método: 1 chat = 1 tarea. El chat de planificación es independiente.
 > REGLA OBLIGATORIA: toda tarea termina con actualización de este archivo, commit y push a GitHub.
 
-Última actualización: 2026-11-08 (F1.3 hecha: matrices de KW y de patrones programáticos con prueba de viabilidad; F1.1 a F1.3 hechas; Fase 1 en curso, 3 de 7 tareas; R-09 y R-10 abiertos)
+Última actualización: 2026-11-08 (F1.4 propuesta entregada: taxonomía y arquitectura de información, pendiente de aprobación del autor; F1.1 a F1.3 hechas; Fase 1 en curso, 3 de 7 tareas hechas; R-09 y R-10 abiertos)
 
 ## Estado global
 
 | Fase | Nombre | Estado |
 |---|---|---|
 | 0 | Estructura del proyecto | HECHO 2026-11-08 (F0.1, F0.2 y F0.3 hechas; R-09 abierto, asumido) |
-| 1 | Estrategia y fundamentos | EN CURSO (F1.1 a F1.3 hechas 2026-11-08; 3 de 7) |
+| 1 | Estrategia y fundamentos | EN CURSO (F1.1 a F1.3 hechas 2026-11-08; 3 de 7; F1.4 propuesta entregada, pendiente de aprobación) |
 | 2+ | Por definir (una a una, en el chat de planificación) | — |
 
 ---
@@ -194,7 +194,14 @@ Salida: data/kw/matriz-categorias.csv, matriz-productos.csv, matriz-informativa.
 Cierre: clústeres definidos, KW y patrones priorizados con su prueba de viabilidad, limitaciones de los datos declaradas.
 
 ## F1.4 · Taxonomía y arquitectura de información
-Estado: PENDIENTE · ~4 h
+Estado: EN CURSO · propuesta entregada 2026-11-08, pendiente de aprobación del autor (el cierre exige "árbol de navegación y URLs aprobados") · ~4 h
+Resultado: `docs/estrategia/TAXONOMIA.md` y `docs/estrategia/ARQUITECTURA.md`. Pasos 1 a 6 ejecutados. Contenido:
+- 7 facetas con valores permitidos; solo tipo es categoría indexable; marca y uso, condicionadas; acero, origen, precio y nivel, filtros (indexables solo vía P-14, P-12 y P-15 cuando se cumplan sus condiciones).
+- Patrón de URL en 8 familias, ficha plana `/ficha/{slug}/`, árbol de navegación, menú, migas y 4 temas de blog.
+- Estados E1 (indexar), E2 (publicar sin indexar) y E3 (no generar); por defecto toda página programática es E3. Filtros sin URL rastreable.
+- Umbrales por familia (heurísticas de esta tarea) y su aplicación al piloto: máximo 15 páginas E1 de catálogo; 0 publicables hoy porque ninguna ficha tiene datos de fabricante verificados.
+- Declarado en los documentos: los hubs de jamonero (2 fichas) y santoku (1 ficha) quedan en E2 con el umbral de 3 fichas; uso y nivel dependen de F1.5; acero, origen, grado, uso y nivel no se pueden poblar con los datos de hoy; el nº 2 del top 10 no tiene tipo verificable; la guía de Google sobre facetas se consultó en fragmentos de búsqueda.
+- Decisiones pendientes del autor (ARQUITECTURA.md, sección 9): ficha plana, "japoneses" como colección transversal (reinterpreta D-013), umbral del hub de tipo, sinónimo cocinero / cebollero / chef y alternativas como sección. No registradas en DECISIONS.md hasta su aprobación.
 Objetivo: cómo se clasifica y navega el catálogo, y cómo se estructura la URL.
 Entradas: clústeres (F1.3), criterios de clasificación decididos.
 Pasos:
@@ -252,7 +259,7 @@ Cierre: alcance de oleada 1 aprobado por el autor.
 - [x] Método de investigación documentado, con limitaciones declaradas (F1.1, 2026-11-08)
 - [x] Top 10 de cuchillos de cocina con evidencia y fecha (F1.2, 2026-11-08; provisional, ver TOP10-COCINA.md sección 5)
 - [x] Matrices de KW (categorías, productos, informativa), matriz de patrones con prueba de viabilidad y clústeres priorizados (F1.3, 2026-11-08; provisional, ver KW-CLUSTERS.md sección 7)
-- [ ] Taxonomía, arquitectura de navegación y patrón de URLs aprobados
+- [ ] Taxonomía, arquitectura de navegación y patrón de URLs aprobados (F1.4: propuesta entregada 2026-11-08 en TAXONOMIA.md y ARQUITECTURA.md; falta la aprobación del autor)
 - [ ] Metodología editorial (ficha, puntuación, rankings, comparativas) aprobada
 - [ ] Modelo de datos conceptual aprobado
 - [ ] Alcance de la oleada 1 cerrado
