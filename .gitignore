@@ -16,6 +16,12 @@ next-env.d.ts
 .env.*
 !.env.example
 
+# Códigos de recuperación y copias de seguridad de 2FA (NUNCA subir)
+*recovery*
+*backup-codes*
+*backup_codes*
+*2fa*
+
 # Logs
 *.log
 npm-debug.log*
